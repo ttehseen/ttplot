@@ -188,7 +188,8 @@ for (i in 1:10) {
 correlationPlot(corr.abs)
 ```
 ![CorrPlot2](https://github.com/ttehseen/ttplot/blob/master/images/corrplot2.png)
-The plot makes is much easier to visualize the correlation matrix!
 
+
+The plot makes is much easier to visualize the correlation matrix!
 
 This is an ongoing project. For more useful plotting function, watch this space!
