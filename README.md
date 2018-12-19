@@ -104,6 +104,7 @@ Let's run and see the results.
 ```R
 missingValPlot(df.data)
 ```
+![MissValsPlot](https://github.com/ttehseen/ttplot/blob/master/images/missvalsplot.png)
 
 We can see from the plot that the NA values for `Variable A` are significantly greater in number than the rest. It might be a good idea to drop this column in any predictive model. We can also see that for `Variable J`, the NA values are all present in the bottom half of the dataset. There might have been some error during data collection that corrupted values for that part, assuming that the data is arranged chronologically. For the remaining columns, the NA's are present randomly and sparsely. This is very good insight that we did not get from just looking at the summary. A graph like this can be very good for feature analysis before designing a model. It can inform your decision on which columns to drop for the model.
 
@@ -173,6 +174,7 @@ Again, everything is coded in base R so it should be relatively easy to manipula
 ```R
 correlationPlot(corr.abs)
 ```
+![CorrPlot1](https://github.com/ttehseen/ttplot/blob/master/images/corrplot1.png)
 
 We get a nice grid of circles where each circle is filled with a shade of red that corresponds to the correlation between the variables it is representing. The correlation is written inside the box as well. Now since we used completely random data, we expectedly, do not see much correlation between our variables. For the sake of visualization, let us manipulate our correlation matrix a bit and bump up the values to see what the plot would have looked like had our data not been completely random and uncorrelated.
 
@@ -185,8 +187,8 @@ for (i in 1:10) {
 
 correlationPlot(corr.abs)
 ```
+![CorrPlot2](https://github.com/ttehseen/ttplot/blob/master/images/corrplot2.png)
 The plot makes is much easier to visualize the correlation matrix!
 
-![Batplot1](https://github.com/ttehseen/bowlR/blob/master/imgs/batPlot1.png)
 
-I will update the package with more graphics functions as well as a few predictive ones using Machine Learning methods in R.
+This is an ongoing project. For more useful plotting function, watch this space!
